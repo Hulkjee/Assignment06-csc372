@@ -1,0 +1,186 @@
+
+/*
+Name: Abdullah Khan
+Date: November 19, 2026
+Course: CSC 372
+Description: Styles the Triviabook website.
+*/
+
+/* General page styling */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f6fb;
+  color: #253047;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #243b70;
+  color: white;
+  text-align: center;
+  padding: 35px 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+header p {
+  margin: 8px 0 0;
+}
+
+/* Main content */
+main {
+  max-width: 850px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* Each section */
+section {
+  background-color: white;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+  margin-top: 0;
+  color: #243b70;
+}
+
+/* Form labels */
+label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Form inputs */
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #c8cfdb;
+  border-radius: 6px;
+  font: inherit;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #4169a8;
+  outline-offset: 1px;
+}
+
+/* Buttons */
+button {
+  background-color: #243b70;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin-top: 18px;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #36579b;
+}
+
+button:disabled {
+  background-color: #9ca7ba;
+  cursor: not-allowed;
+}
+
+/* Trivia question cards */
+.question-card {
+  background-color: #f8faff;
+  border: 1px solid #e1e6f0;
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 15px;
+}
+
+.question-card h3 {
+  margin-top: 0;
+  font-size: 17px;
+}
+
+.question-card p {
+  margin: 6px 0;
+}
+
+/* Random question area */
+#random-question {
+  margin-top: 20px;
+}
+
+#answer-form {
+  margin-top: 15px;
+}
+
+/* Keep hidden forms hidden */
+[hidden] {
+  display: none !important;
+}
+
+/* Result messages */
+#answer-result,
+#add-result {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.success {
+  color: #16723b;
+}
+
+.error {
+  color: #b42318;
+}
+
+/* Footer */
+footer {
+  background-color: #243b70;
+  color: white;
+  text-align: center;
+  padding: 18px;
+  margin-top: 30px;
+}
+
+/* Mobile screen adjustments */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 28px;
+  }
+
+  main {
+    margin-top: 20px;
+    padding: 0 12px;
+  }
+
+  section {
+    padding: 18px;
+  }
+
+  button {
+    width: 100%;
+  }
+}

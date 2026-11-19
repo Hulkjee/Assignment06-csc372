@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<!--
+Name: Abdullah Khan
+Date: November 19, 2026
+Course: CSC 372
+Description: Main webpage for the Triviabook application.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Triviabook</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>Triviabook</h1>
+    <p>Test your knowledge with fun trivia questions!</p>
+  </header>
+
+  <main>
+
+    <!-- Section to browse questions by topic. -->
+    <section id="topics-section">
+      <h2>Browse Trivia Questions</h2>
+
+      <label for="topic-select">Choose a topic:</label>
+      <select id="topic-select">
+        <option value="">Select a topic</option>
+      </select>
+
+      <label for="difficulty-select">Difficulty:</label>
+      <select id="difficulty-select">
+        <option value="">All difficulties</option>
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+
+      <button id="load-questions-btn" type="button">
+        Show Questions
+      </button>
+
+      <div id="questions-list" aria-live="polite"></div>
+    </section>
+
+    <!-- Section to play a random trivia question. -->
+    <section id="random-section">
+      <h2>Random Trivia Challenge</h2>
+
+      <button id="random-btn" type="button">
+        Get Random Question
+      </button>
+
+      <div id="random-question" aria-live="polite"></div>
+
+      <form id="answer-form" hidden>
+        <label for="answer-input">Your Answer:</label>
+        <input
+          type="text"
+          id="answer-input"
+          placeholder="Enter your answer"
+          required
+        >
+
+        <button type="submit">Check Answer</button>
+      </form>
+
+      <p id="answer-result" role="status"></p>
+    </section>
+
+    <!-- Section to add a new trivia question. -->
+    <section id="add-section">
+      <h2>Add a New Trivia Question</h2>
+
+      <form id="add-question-form">
+
+        <label for="new-topic">Topic:</label>
+        <input
+          type="text"
+          id="new-topic"
+          placeholder="Example: history"
+          required
+        >
+
+        <label for="new-question">Question:</label>
+        <textarea
+          id="new-question"
+          placeholder="Enter your trivia question"
+          required
+        ></textarea>
+
+        <label for="new-answer">Correct Answer:</label>
+        <input
+          type="text"
+          id="new-answer"
+          placeholder="Enter the correct answer"
+          required
+        >
+
+        <label for="new-difficulty">Difficulty:</label>
+        <select id="new-difficulty" required>
+          <option value="">Select difficulty</option>
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+
+        <button type="submit">Add Question</button>
+      </form>
+
+      <p id="add-result" role="status"></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Triviabook | CSC 372 Assignment 6</p>
+  </footer>
+
+</body>
+</html>
