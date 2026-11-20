@@ -99,7 +99,11 @@ I also tested the application in Chrome to make sure questions could be displaye
 
 ## Deployment
 
-I will deploy the application using Render and connect it to my Neon PostgreSQL database.
+I deployed my Triviabook application using Render and connected it to my Neon PostgreSQL database. The website is publicly available, and users can browse trivia questions, answer questions, and add new ones.
+
+**Live Application:** https://assignment06-triviabook.onrender.com
+
+**API Example:** https://assignment06-triviabook.onrender.com/triviabook/topics
 
 **Live Application:** I will add the Render link here after deployment.
 
