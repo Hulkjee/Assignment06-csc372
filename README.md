@@ -107,4 +107,3 @@ I will deploy the application using Render and connect it to my Neon PostgreSQL 
 
 Abdullah Khan  
 CSC 372 - Assignment 6  
-UNC Greensboro# Assignment06-csc372
